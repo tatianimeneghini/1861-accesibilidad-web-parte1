@@ -30,6 +30,7 @@
     />
   </head>
   <body>
+    <a href="#navegacionPrincipal" class="saltarNavegacion">Saltar para el contenido principal</a>
     <header class="llamada container">
       <a href="#" class="llamada-logo" title="Home de Apeperia">
         <svg
@@ -97,8 +98,8 @@
       </nav>
     </header>
 
-    <main class="contenido">
-      <section class="seccionDestacado">
+    <main class="contenido" role="main">
+      <section class="seccionDestacado" id="navegacionPrincipal">
         <h1 class="seccionDestacado-titulo">APLICACIONES EN LA MEDIDA</h1>
         <h2 class="seccionDestacado-texto">
           Apeperia es una empresa emergente con una manera inovadora de comprar
@@ -348,39 +349,41 @@
           <a
             href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste"
             class="seccionDestacados-link"
+            aria-labelledby="tituloDestacado1"
           >
-            <div class="seccionDestacados-destacado">
+            <figure class="seccionDestacados-destacado">
               <img
                 src="img/empezando-crear-logotipo.png"
                 class="seccionDestacados-destacado-img"
                 alt="Herramientas de diseñador. Ilustración"
               />
-              <p
+              <figcaption
                 class="seccionDestacados-destacado-titulo"
                 id="tituloDestacado1"
               >
                 Conozca las primeras etapas de la creación de un logotipo
               </p>
-            </div>
+            </figure>
           </a>
 
           <a
             href="http://blog.apeperia.com.br/design/dicas-como-fotografar-com-celular"
             class="seccionDestacados-link"
+            aria-labelledby="tituloDestacado2"
           >
-            <div class="seccionDestacados-destacado">
+            <figure class="seccionDestacados-destacado">
               <img
                 src="img/dicas-fotografia.png"
                 class="seccionDestacados-destacado-img"
                 alt="Una mujer muestra su cámara fotográfica a un hombre"
               />
-              <p
+              <figcaption
                 class="seccionDestacados-destacado-titulo"
                 id="tituloDestacado2"
               >
                 ¿Trabajas con fotografía? Conozca esos consejos
               </p>
-            </div>
+            </figure>
           </a>
 
           <button

@@ -37,6 +37,7 @@ li[aria-hidden="false"] {
   height: 1px;
   color: transparent;
   position: absolute;
+  display: block;
 }
 
 .clearfix:after {
