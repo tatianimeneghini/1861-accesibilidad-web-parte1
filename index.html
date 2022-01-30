@@ -26,7 +26,7 @@
 
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      content="width=device-width, user-scalable=no"
     />
   </head>
   <body>
@@ -429,18 +429,19 @@
             </p>
 
             <div class="contactoCampo contactoCampo--succeso">
-              <label>Nombre: </label>
+              <label for="nombre">Nombre: </label>
               <input
                 type="text"
+                id="nombre"
                 class="contactoCampo--valido"
-                value="Tatiani M."
+                placeholder="Nombre..."
                 required
               />
             </div>
 
             <div class="contactoCampo contactoCampo--error">
-              <label>Email: </label>
-              <input type="email" class="contactoCampo--noValido" required />
+              <label for="email">Email: </label>
+              <input id="email" type="email" class="contactoCampo--noValido" required placeholder="Email..." />
               <span class="contactoCampo-msg contactoCampo-msg--error">
                 ¿Quieres decir <a href="#">gmail.com?</a>
               </span>
@@ -473,7 +474,7 @@
               <input
                 type="text"
                 class="contactoCampo-campoDeshabilitado"
-                disabled
+                readonly
                 value="Calle Vergueiro"
               />
             </div>
@@ -560,7 +561,10 @@
           <video
             src="img/formacion-java.mp4"
             class="seccionInstitucional-video"
-          ></video>
+            controls
+          >
+            <track src="img/subtitulo-espanol.vtt" kind="subtitles" srclang="es" label="Español (América Latina)">
+          </video> -->
         </div>
       </section>
       <!--fim .seccionInstitucional-->
